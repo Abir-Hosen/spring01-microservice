@@ -1,0 +1,22 @@
+package com.abir.information.address;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class AddressController {
+	
+	@Autowired
+	private AddressService addressService;
+	
+	public Address saveNewAddress (Address address) {
+		return (Address) addressService.save(address);
+	}
+	
+	@GetMapping("/hello")
+	public String helloWorld() {
+		return "Hello world";
+	}
+
+}

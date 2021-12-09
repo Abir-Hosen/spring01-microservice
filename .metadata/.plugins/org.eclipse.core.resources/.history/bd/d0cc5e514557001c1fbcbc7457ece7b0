@@ -1,0 +1,45 @@
+package com.abir.newsfeed.status;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
+@Service("statusService")
+public class StatusServiceImpl implements StatusService {
+
+	@Autowired
+	private StatusRepository statusRepository;
+
+	private Pageable pageable = PageRequest.of(0, 1000);
+
+	@Override
+	public Object getById(Long id) {
+		if(statusRepository.findById(id).get() != null) {
+			return statusRepository.findById(id).get();
+		}
+		return new Status();
+	}
+	
+	@Override
+	public Page<?> getAll() {
+		return statusRepository.findAll(pageable);
+	}
+
+	@Override
+	public Status save(Object object) {
+		return statusRepository.save((Status) object);
+	}
+
+	@Override
+	public void delete(Long id) {
+		statusRepository.deleteById(id);
+	}
+
+	@Override
+	public void deleteAll() {
+		statusRepository.deleteAll();
+	}
+
+}

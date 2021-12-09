@@ -1,0 +1,13 @@
+package com.abir.information.common;
+
+import org.springframework.data.domain.Page;
+
+public interface CommonService {
+
+
+	public Object getDataById(Long id);
+	public Page<?> getAllData();
+	public Object save(Object object);
+	public Object update(Long id);
+	public void delete(Long id);
+}

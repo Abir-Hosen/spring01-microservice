@@ -1,0 +1,9 @@
+package com.abir.information.address;
+
+import org.springframework.data.domain.Page;
+
+import com.abir.information.common.CommonService;
+
+public interface AddressService extends CommonService {
+
+}

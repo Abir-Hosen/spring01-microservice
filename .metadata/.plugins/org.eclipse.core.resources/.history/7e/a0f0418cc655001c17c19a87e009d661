@@ -1,0 +1,5 @@
+package com.example.information.common;
+
+public class CommonServiceImpl implements CommonService {
+
+}

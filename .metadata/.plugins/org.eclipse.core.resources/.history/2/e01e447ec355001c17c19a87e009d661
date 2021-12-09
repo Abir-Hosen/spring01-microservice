@@ -1,0 +1,5 @@
+package com.example.information.address;
+
+public interface AddressService {
+
+}

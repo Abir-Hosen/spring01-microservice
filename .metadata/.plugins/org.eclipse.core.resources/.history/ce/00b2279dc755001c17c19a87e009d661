@@ -1,0 +1,9 @@
+package com.abir.information.common;
+
+import org.springframework.data.domain.Page;
+
+public interface CommonService {
+
+	public Page<?> getAllData();
+	public Object save();
+}

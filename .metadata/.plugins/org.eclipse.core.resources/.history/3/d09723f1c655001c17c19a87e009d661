@@ -1,0 +1,9 @@
+package com.abir.information.address;
+
+import org.springframework.data.domain.Page;
+
+public interface AddressService {
+	
+	public Page<?> getAllAddress();
+
+}

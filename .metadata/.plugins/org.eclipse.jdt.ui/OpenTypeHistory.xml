@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=newsfeed/\/home\/abir\/.m2\/repository\/org\/springframework\/data\/spring-data-commons\/2.6.0\/spring-data-commons-2.6.0.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-commons=/=/maven.version=/2.6.0=/=/maven.scope=/compile=/&lt;org.springframework.data.repository(PagingAndSortingRepository.class[PagingAndSortingRepository" modifiers="1537" timestamp="1638695771735"/>
+    <typeInfo handle="=newsfeed/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.abir.newsfeed.common{CommonService.java[CommonService" modifiers="513" timestamp="1638872643568"/>
+    <typeInfo handle="=newsfeed/\/home\/abir\/sts-4.12.1.RELEASE\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.0.v20211012-1059\/jre\/lib\/jrt-fs.jar`java.sql=/maven.pomderived=/true=/&lt;javax.sql(CommonDataSource.class[CommonDataSource" modifiers="1537" timestamp="1634061822000"/>
+    <typeInfo handle="=newsfeed/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.abir.newsfeed.status{StatusService.java[StatusService" modifiers="513" timestamp="1638875497206"/>
+</typeInfoHistroy>

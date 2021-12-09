@@ -1,0 +1,9 @@
+package com.abir.newsfeed.template;
+
+public class Address {
+	
+	private Long id;
+	private String name;
+	private Long userId;
+
+}

@@ -1,0 +1,7 @@
+package com.abir.newsfeed.status;
+
+import org.springframework.data.repository.PagingAndSortingRepository;
+
+public interface StatusRepository extends PagingAndSortingRepository<Status, Long> {
+
+}

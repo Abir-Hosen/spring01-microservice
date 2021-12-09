@@ -1,0 +1,12 @@
+package com.abir.servicegateway.common;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class FallBackMethodController {
+
+	public String informationServiceFallBackMethod() {
+		return "Information service is getting longer than expected. Please try again leter.";
+	}
+
+}

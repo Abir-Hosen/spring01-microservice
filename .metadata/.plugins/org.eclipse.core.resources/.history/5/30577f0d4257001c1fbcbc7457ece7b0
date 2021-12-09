@@ -1,0 +1,39 @@
+package com.abir.newsfeed.status;
+
+import org.springframework.data.domain.Page;
+import org.springframework.stereotype.Service;
+
+@Service("statusService")
+public class StatusServiceImpl implements StatusService {
+
+	@Override
+	public Object getById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Page<?> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object save(Object object) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete(Long id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteAll() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.example.information.address;
+
+public class Address {
+	
+	Long id;
+
+}
