@@ -18,6 +18,8 @@ spring:
         format_sql: true
   application:
     name: NEWSFEED-SERVICE
+  zipkin:
+    base-url: http://localhost:9411/
         
 eureka:
   client:

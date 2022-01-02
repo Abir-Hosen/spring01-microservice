@@ -1,7 +1,10 @@
 server:
   port: 8080
+#  spring.main.web-application-type:reactive
 
 spring:
+  main:
+    web-application-type: reactive
   datasource:
     url: jdbc:mysql://localhost:3306/ms_db
     username: abir
@@ -35,9 +38,20 @@ spring:
               args:
                 name: NEWSFEED-SERVICE
                 fallbackuri: forward:/feed-service-fallback
+            - name: CustomFilter
+        - id: USER-SERVICE
+          uri: lb://USER-SERVICE
+          predicates: 
+          - Path=/user/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: USER-SERVICE
+                fallbackuri: forward:/user-service-fallback
+            - name: CustomFilter
   application: 
     name: GATEWAY-SERVICE
-            
+
 hystrix:
   command:
     fallbackcmd:
@@ -45,13 +59,13 @@ hystrix:
         isolation:
           thread:
             timeoutInMiliseconds: 4000
-            
+
 management:
   endpoints:
     web:
       exposure:
         include: hystrix.stream
-    
+
 
 eureka:
   client:
@@ -61,3 +75,7 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     hostname: localhost
+
+    
+    
+    

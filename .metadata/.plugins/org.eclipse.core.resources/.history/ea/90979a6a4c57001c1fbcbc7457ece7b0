@@ -1,7 +1,0 @@
-package com.abir.newsfeed.status;
-
-import com.abir.newsfeed.common.CommonService;
-
-public interface StatusService extends CommonService {
-
-}

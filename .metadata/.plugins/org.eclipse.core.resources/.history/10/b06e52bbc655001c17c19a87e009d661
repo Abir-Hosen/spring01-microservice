@@ -1,5 +1,0 @@
-package com.abir.information.common;
-
-public interface CommonService {
-
-}

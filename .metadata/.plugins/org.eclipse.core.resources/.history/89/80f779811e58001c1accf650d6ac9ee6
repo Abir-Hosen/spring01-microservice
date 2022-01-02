@@ -1,5 +1,0 @@
-package com.abir.servicegateway.controller;
-
-public class FallBackMethodController {
-
-}

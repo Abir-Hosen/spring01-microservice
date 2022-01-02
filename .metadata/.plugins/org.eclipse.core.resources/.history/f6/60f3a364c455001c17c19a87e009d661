@@ -1,9 +1,0 @@
-package com.example.information.address;
-
-import org.springframework.data.domain.Page;
-
-public interface AddressService {
-	
-	public Page<Address> getAllAddress();
-
-}
